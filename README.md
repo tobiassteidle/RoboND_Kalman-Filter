@@ -69,14 +69,12 @@ $ source devel/setup.bash
 
 #### Step 8 Run the Simulation  
 ```sh
-$ roslaunch turtlebot_gazebo turtlebot_world.launch
+$ roslaunch main main.launch
 ```
 
-#### Step 8 Topics  
+#### Step 9 Multiplot  
 ```sh
-$ rostopic list
-Or
-$ rosrun rqt_graph rqt_graph
+rosrun rqt_multiplot rqt_multiplot
 ```
 
 ### Output
