@@ -23,15 +23,29 @@ $ cd /home/workspace/RoboND_Kalman-Filter/catkin_ws
 $ catkin_make
 ```
 
-#### Step 4 Source ROS in this workspace
+#### Step 4 Clone turtlebot simulator
 ```sh
+$ cd /home/workspace/RoboND_Kalman-Filter/catkin_ws/src
+$ git clone https://github.com/turtlebot/turtlebot_simulator
+```
+
+#### Step 5 Install dependencies
+```sh
+$ cd /home/workspace/RoboND_Kalman-Filter/catkin_ws
+$ source devel/setup.bash
+$ rosdep -i install turtlebot_gazebo
+```
+
+#### Step 6 Build Package
+```sh
+$ cd /home/workspace/RoboND_Kalman-Filter/catkin_ws
+$ catkin_make
 $ source devel/setup.bash
 ```
 
-#### Step 5 Run the Simulation  
+#### Step 7 Run the Simulation  
 ```sh
-$ roslaunch my_robot world.launch
-$ roslaunch ball_chaser ball_chaser.launch
+$ roslaunch turtlebot_gazebo turtlebot_world.launch
 ```
 
 ### Output
